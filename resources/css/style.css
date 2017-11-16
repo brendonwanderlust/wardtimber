@@ -6,7 +6,7 @@
 body {
 	margin: 20px 0;
         background-color:#000000;
-        background-image: url("https://hdwallsource.com/img/2014/5/wood-grain-wallpaper-15235-15706-hd-wallpapers.jpg");
+        background-image: url("../images/wood-grain.jpg");
         background-repeat:repeat;
         background-position:top left;
         background-attachment:scroll;
@@ -106,8 +106,8 @@ h1 a:hover, h2 a:hover, h3 a:hover {
 	display: block;
 	float: left;
 	height: 25px;
-	margin-right: 1px;
-	padding: 10px 20px 0 20px;
+	margin-right: 0px;
+	padding: 10px 20px 0px 20px;
 	text-decoration: none;
 	font-size: 1.1em;
 	font-weight: bold;
