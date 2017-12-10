@@ -1,192 +1,152 @@
-* {
-	margin: 0;
-	padding: 0;
+
+/* General Page Styling */
+html {
+	font-family: Helvetica;
+	font-size: 16px;
+	color: #330000;
 }
 
 body {
-	margin: 20px 0;
-        background-color:#000000;
-        background-image: url("../images/wood-grain.jpg");
-        background-repeat:repeat;
-        background-position:top left;
-        background-attachment:scroll;
+  background-image: url("../images/wood-grain.jpg");
+  background-repeat:repeat;
+  background-position:center;
+	background-attachment: scroll;
 }
 
-body, th, td, input, textarea {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	color: #330000;
-}
-
-form {
-}
-
-fieldset {
-}
-
-h1, h2, h3 {
-	margin-top: 1.5em;
-	color: #330000;;
-}
-
-h1 {
-	font-size: 3em;
-}
-
-h2 {
-	font-size: 1.1em;
-	font-weight: bold;
-	color: #330000;;
-}
-
-h3 {
-	font-size: 1em;
-}
-
-ul, ol {
-	margin-top: 1.5em;
-	line-height: 1.8em;
-}
-
-ul, ol {
-	margin-left: 3em;
-}
-
-blockquote {
-	margin-left: 3em;
-	margin-right: 3em;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	border: none;
-}
-
-h1 a, h2 a, h3 a {
-	border: none;
-	text-decoration: none;
-}
-
-h1 a:hover, h2 a:hover, h3 a:hover {
-	background: none;
-}
-
-
-/* Wrapper */
-
-#wrapper {
-}
-
-/* Header */
-
-#header {
-	width: 980px;
-	margin: 0 auto;
-}
-
-#menu {
-	float: left;
-}
-
-#menu ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	line-height: normal;
-}
-
-#menu li {
-	float: left;
-}
-
-#menu a {
+/* Start HEADER STYLING. */
+header {
 	display: block;
+	width: 980px;
+	margin: 1rem auto 0 auto;
+}
+
+nav ul {
+	display: flex;
+	height: 2rem;
+}
+
+nav a {
+	display: block;
+	font-weight: bold;
 	float: left;
-	height: 25px;
 	margin-right: 0px;
 	padding: 10px 20px 0px 20px;
 	text-decoration: none;
-	font-size: 1.1em;
-	font-weight: bold;
+	font-size: 1.3rem;
 	color: white;
+	text-decoration: none;
 }
 
-#menu a:hover {
+nav a:hover {
 	background:  #F3F3F3;
 	color: #330000;
+	border: none;
 }
 
-#menu .current_page_item a {
+#current_page_item {
 	background:  #F3F3F3;
 	color: #2C2E22;
 }
-/* Logo */
 
-#logo {
+
+/* Logo */
+.logo-container {
+	display: flex;
+	background-color: #FFFFFF;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 	width: 978px;
-	height: 200px;
 	margin: 0 auto;
-	height: 115px;
+	height: 7.5rem;
 	border: 20px solid #F3F3F3;
 }
 
-#sys_banner {
-	width: 978px;
-	height: 200px;
-	margin: 0 auto;
-	height: 263px;
+.logo-container h1 {
+	font-size: 6rem;
+	vertical-align: middle;
+	color: #330000;
 }
 
-#logo h1, #logo h2 {
-	margin: 0;
-	padding: 0;
-}
-
-#logo h1 {
-	padding: 100px 5px 0 20px;
-	color: #FFFFFF;
-}
-
-#logo h2 {
-	padding: 115px 0 0 0;
-	font-style: italic;
-}
-
-#logo p {
-	clear: left;
-	margin: 0;
-	padding: 0 0 0 20px;
-	line-height: normal;
-	font-size: 1.2em;
-	font-weight: bold;
-}
-
-#logo a {
-	color: #FFFFFF;
-}
-
-/* Page */
+/* Page Content Section*/
 
 #page {
-	width: 978px;
+	display: flex;
+	flex-direction: column;
+	width: 938px;
 	margin: 0 auto;
-	padding: 20px 0px 0 0px;
+	padding: 1.25rem 1.25rem;
 	background: #FFFFFF;
 	border: 20px solid #F3F3F3;
 	border-top: none;
 }
 
-/* Content */
+.timberframe-intro {
+	display: flex;
+	justify-content: space-between;
 
-#content {
-	float: left;
-	width: 938px;
-	padding: 0px 0px 0px 20px;
 }
 
+.timberframe-intro img {
+	width: 48%;
+}
+
+.wardtimberframes-intro-text {
+	width: 48%;
+	text-align: center;
+}
+
+.wardtimberframes-intro-text h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: .3125rem 0rem;
+}
+
+.wardtimberframes-intro-text h5 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding: .3125rem 0rem;
+}
+
+.wardtimberframes-intro-text p {
+	font-size: 1rem;
+	padding: 1rem 0rem;
+	text-align: left;
+	line-height: 150%;
+}
+
+.row2-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 3rem 0 0 0;
+}
+
+.contact-form {
+	width: 48%;
+}
+
+.special-offer {
+	display: flex;
+	flex-direction: column;
+
+	text-align: center;
+	width: 48%;
+}
+
+.special-offer h5 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.special-offer p {
+	margin-top: .5rem;
+}
+
+#txtspecial {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #808080;
+}
 
 /* Footer */
 
