@@ -1,171 +1,68 @@
-* {
-	margin: 0;
-	padding: 0;
+
+/* General Page Styling */
+html {
+	font-family: Helvetica;
+	font-size: 16px;
+	color: #330000;
 }
 
 body {
-	margin: 20px 0;
-        background-color:#000000;
-        background-image: url("../images/wood-grain.jpg");
-        background-repeat:repeat;
-        background-position:top left;
-        background-attachment:scroll;
+  background-image: url("../images/wood-grain.jpg");
+  background-repeat:repeat;
+  background-position:center;
+	background-attachment: scroll;
 }
 
-body, th, td, input, textarea {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	color: #330000;
-}
-
-form {
-}
-
-fieldset {
-}
-
-h1, h2, h3 {
-	margin-top: 1.5em;
-	color: #330000;;
-}
-
-h1 {
-	font-size: 3em;
-}
-
-h2 {
-	font-size: 1.1em;
-	font-weight: bold;
-	color: #330000;;
-}
-
-h3 {
-	font-size: 1em;
-}
-
-ul, ol {
-	margin-top: 1.5em;
-	line-height: 1.8em;
-}
-
-ul, ol {
-	margin-left: 3em;
-}
-
-blockquote {
-	margin-left: 3em;
-	margin-right: 3em;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	border: none;
-}
-
-h1 a, h2 a, h3 a {
-	border: none;
-	text-decoration: none;
-}
-
-h1 a:hover, h2 a:hover, h3 a:hover {
-	background: none;
-}
-
-
-/* Wrapper */
-
-#wrapper {
-}
-
-/* Header */
-
-#header {
+/* Start HEADER STYLING. */
+header {
+	display: block;
 	width: 980px;
-	margin: 0 auto;
+	margin: 1rem auto 0 auto;
 }
 
-#menu {
-	float: left;
+nav ul {
+	display: flex;
+	height: 2rem;
 }
 
-#menu ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	line-height: normal;
-}
-
-#menu li {
-	float: left;
-}
-
-#menu a {
+nav a {
 	display: block;
 	float: left;
-	height: 25px;
 	margin-right: 0px;
 	padding: 10px 20px 0px 20px;
 	text-decoration: none;
-	font-size: 1.1em;
-	font-weight: bold;
+	font-size: 1.3rem;
 	color: white;
+	text-decoration: none;
 }
 
-#menu a:hover {
+nav a:hover {
 	background:  #F3F3F3;
 	color: #330000;
+	border: none;
 }
 
-#menu .current_page_item a {
+#current_page_item {
 	background:  #F3F3F3;
 	color: #2C2E22;
 }
-/* Logo */
 
-#logo {
+
+/* Logo */
+.logo-container {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 	width: 978px;
-	height: 200px;
 	margin: 0 auto;
-	height: 115px;
+	height: 7.5rem;
 	border: 20px solid #F3F3F3;
 }
 
-#sys_banner {
-	width: 978px;
-	height: 200px;
-	margin: 0 auto;
-	height: 263px;
-}
-
-#logo h1, #logo h2 {
-	margin: 0;
-	padding: 0;
-}
-
-#logo h1 {
-	padding: 100px 5px 0 20px;
-	color: #FFFFFF;
-}
-
-#logo h2 {
-	padding: 115px 0 0 0;
-	font-style: italic;
-}
-
-#logo p {
-	clear: left;
-	margin: 0;
-	padding: 0 0 0 20px;
-	line-height: normal;
-	font-size: 1.2em;
-	font-weight: bold;
-}
-
-#logo a {
-	color: #FFFFFF;
+.logo-container h1 {
+	font-size: 6rem;
+	vertical-align: middle;
 }
 
 /* Page */
