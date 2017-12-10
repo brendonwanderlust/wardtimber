@@ -27,6 +27,7 @@ nav ul {
 
 nav a {
 	display: block;
+	font-weight: bold;
 	float: left;
 	margin-right: 0px;
 	padding: 10px 20px 0px 20px;
@@ -51,6 +52,7 @@ nav a:hover {
 /* Logo */
 .logo-container {
 	display: flex;
+	background-color: #FFFFFF;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
@@ -63,27 +65,88 @@ nav a:hover {
 .logo-container h1 {
 	font-size: 6rem;
 	vertical-align: middle;
+	color: #330000;
 }
 
-/* Page */
+/* Page Content Section*/
 
 #page {
-	width: 978px;
+	display: flex;
+	flex-direction: column;
+	width: 938px;
 	margin: 0 auto;
-	padding: 20px 0px 0 0px;
+	padding: 1.25rem 1.25rem;
 	background: #FFFFFF;
 	border: 20px solid #F3F3F3;
 	border-top: none;
 }
 
-/* Content */
+.timberframe-intro {
+	display: flex;
+	justify-content: space-between;
 
-#content {
-	float: left;
-	width: 938px;
-	padding: 0px 0px 0px 20px;
 }
 
+.timberframe-intro img {
+	width: 48%;
+}
+
+.wardtimberframes-intro-text {
+	width: 48%;
+	text-align: center;
+}
+
+.wardtimberframes-intro-text h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: .3125rem 0rem;
+}
+
+.wardtimberframes-intro-text h5 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding: .3125rem 0rem;
+}
+
+.wardtimberframes-intro-text p {
+	font-size: 1rem;
+	padding: 1rem 0rem;
+	text-align: left;
+	line-height: 150%;
+}
+
+.row2-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 3rem 0 0 0;
+}
+
+.contact-form {
+	width: 48%;
+}
+
+.special-offer {
+	display: flex;
+	flex-direction: column;
+
+	text-align: center;
+	width: 48%;
+}
+
+.special-offer h5 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.special-offer p {
+	margin-top: .5rem;
+}
+
+#txtspecial {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #808080;
+}
 
 /* Footer */
 
